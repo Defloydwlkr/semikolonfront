@@ -1,0 +1,91 @@
+/* Global Reset (if not defined globally) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Container */
+.navbar {
+  width: 100%;
+  position: fixed;
+  padding: 10px 80px;
+  display: flex;
+  left: 0;
+  top: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: #fff; 
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+
+  
+}
+
+/* Ensure the table spans full width */
+.navbar-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensures equal width for all columns */
+  margin: 0 auto; /* Center the table */
+  background-color: #fff; /* Change as needed */
+
+}
+
+/* Table row styling */
+.navbar-table tr {
+  vertical-align: middle;
+  height: 60px; /* Adjust height as needed */
+  background-color: #fff; /* Change as needed */
+}
+
+/* General nav item styling */
+.nav-item {
+  text-align: center;
+  padding: 0 5px;
+}
+
+/* Specific styling for the logo cell */
+.logo-cell {
+  padding-left: 10px;
+}
+
+/* Logo Image styling */
+.navbar-logo {
+  height: 60px;
+  width: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}
+
+/* Navigation link styling */
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.5rem;
+  column-span: all; /* Ensures the link spans the entire cell */
+  
+
+}
+
+/* Login Button styling */
+.login {
+  cursor: pointer;
+  opacity: 0; /* Hide the button by default */
+  transition: opacity 0.3s ease; /* Smooth transition when hovered */
+  background-color: transparent; /* Remove background color */
+  color: transparent;            /* Remove text/icon color */
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.login:hover {
+  opacity: 1; /* Show the button when hovered */
+}

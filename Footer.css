@@ -1,0 +1,50 @@
+/* Footer styling with fixed position */
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the footer stays on top if necessary */
+}
+
+/* Social icons container */
+.footer .social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+/* Individual social icon link */
+.footer .social-icons a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Label next to each icon */
+.footer .social-icons a span {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Hover effect for icon links */
+.footer .social-icons a:hover {
+  color: yellow;
+}
+
+/* Footer text styling */
+.footer p {
+  text-align: center;
+  margin: 5px 0;
+}

@@ -1,0 +1,58 @@
+/* Container lays out the fixed sidebar and the content side by side */
+.menu-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Fix the Sidebar to the left corner */
+.menu-container .Sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: #fff;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+/* The content is shifted to the right of the Sidebar */
+.menu-content {
+  flex: 1;
+  margin-left: 270px; /* Sidebar width (250px) + gap (20px) */
+  padding: 20px;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.MuiTableHead-root .MuiTableCell-root {
+  background-color: #272974;
+  color: white;
+  padding: 10px 20px;
+  font-size: small;
+}
+
+.MuiTableRow-root:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.MuiTableRow-root:hover {
+  background-color: #f1f1f1;
+}
+
+.MuiTableCell-root {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Optional: Styling for menu items images */
+.menu-item-photo {
+  border-radius: 4px;
+  margin-bottom: 10px;
+}

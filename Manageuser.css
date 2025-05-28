@@ -1,0 +1,67 @@
+/* Layout Container */
+.manage-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* Fixed Sidebar */
+.manage-container .Sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content Area */
+.content {
+  flex: 1;
+  margin-left: 270px; /* Sidebar width (250px) + 20px gap */
+  padding: 20px;
+}
+
+/* Heading */
+.content h2,
+.MuiTypography-h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+}
+
+.MuiTableHead-root .MuiTableCell-root {
+  background-color: #272974;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: small;
+}
+
+.MuiTableRow-root:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.MuiTableRow-root:hover {
+  background-color: #f1f1f1;
+}
+
+/* Modal Box Overrides */
+.MuiBox-root {
+  padding: 20px;
+}
